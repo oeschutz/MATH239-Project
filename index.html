@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MATH 239 Project</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div>
+          <h1>Assessing Food Insecurity in the State of Oregon</h1>
+          <h2>Olivia Schutz, Malie Heine, and Marion Powell</h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <h3> About the Project </h3>
+        <p>
+          We used the 2021 Fall Data CHallenge dataset, which has a variety of variables that include population, vehicle access, 
+          and distance from the nearest grocery store among others. This data is interesting since we will be able to look at 
+          low income households grocery store proximity and their accessibility to food. 
+
+          Our group came up with three core questions:
+          <ul>
+            <li>Can a low income household a mile away from the nearest grocery store have a higher chance of needing SNAP benefits?</li>
+            <li>How does vehicle access affect the number of households receiving SNAP benefits?</li>
+            <li>How can you predict whether a census tract is classified as low access or not?</li>
+          </ul>
+
+          We used ANOVA, linear regression, t-tests, and classification trees for this project.
+        </p>
+      </section>
+      <section class="results">
+        <h3> Analysis and Results </h3>
+        <p>
+          We found that vehicle access does have an effect on the relationship between low income population and number of people 
+          receiving SNAP benefits. The relationship was significant with parallel lines, but not with different slopes when using a t-test.
+          
+          We also attempted to use whether or not a tract was urban as a categorical predictor, but that had an insignificant effect 
+          on the intercept of the regression line.
+          
+          It is possible to predict whether a tract is considered low access using the median family income in that tract, 
+          the total Black population in that tract, and the poverty rate of that tract, with an error rate of only 1.94%.
+
+        </p>
+      </section>
+      <section class = "code">
+        <h3> Code and Output </h3>
+        <p>
+          The code for this project and the related outputs is available on RPubs <a href="https://rpubs.com/oeschutz/math239-finalprojectcode" target=_blank>here</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
